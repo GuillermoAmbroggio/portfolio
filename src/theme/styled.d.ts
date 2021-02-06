@@ -1,0 +1,22 @@
+import "styled-components";
+
+interface ITexts {
+  subTitle: string;
+  regular: string;
+  title: string;
+}
+declare module "styled-components" {
+  export interface DefaultTheme {
+    borderRadius: string;
+    palette: {
+      common: {
+        black: string;
+        white: string;
+      };
+      primary: string;
+      secondary: string;
+      background: string;
+      texts: ITexts;
+    };
+  }
+}

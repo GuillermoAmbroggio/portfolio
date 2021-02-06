@@ -1,4 +1,4 @@
-import colors from "./colors";
+/* import colors from "./colors";
 import text from "./text";
 import typography from "./typography";
 
@@ -7,4 +7,6 @@ export default {
   colors,
   text,
   typography,
-};
+}; */
+
+export { default as colors } from "./colors";
