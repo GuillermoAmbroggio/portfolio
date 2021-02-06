@@ -1,11 +1,20 @@
-import styled from "styled-components";
-export const Wrapper = styled.main`
-  // let's put all our global typography at the top
-  ${({ theme }) => theme.typography};
+import { createGlobalStyle } from "styled-components";
 
-  padding: 0px;
-  margin: 0px;
-  height: 100vh;
-  background-color: ${({ theme }) => theme.colors.primary.primary1};
-  color: ${({ theme }) => theme.colors.secondary.secondary2};
-`;
+export const Wrapper = createGlobalStyle`
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: ${({ theme }) => theme.palette.background};
+    color: ${({ theme }) => theme.palette.texts.regular};
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif, 'Merriweather', Georgia, serif, 'Open Sans'; 
+    transition: all 0.25s linear;
+  }
+
+  `;
