@@ -1,8 +1,5 @@
 .asd {
-  color: red;
+  color: yellow;
   height: 300px;
-}
-
-.asd ul li {
-  color: black;
+  background-color: aqua;
 }

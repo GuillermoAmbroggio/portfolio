@@ -1,4 +1,5 @@
 import "styled-components";
+import { ISizes, IWeight } from "./tokens/text";
 
 interface ITexts {
   subTitle: string;
@@ -18,5 +19,8 @@ declare module "styled-components" {
       background: string;
       texts: ITexts;
     };
+    fontFamilies: string;
+    fontSizes: ISizes;
+    fontWeights: IWeight;
   }
 }

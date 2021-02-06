@@ -1,5 +1,5 @@
 import { DefaultTheme } from "styled-components";
-import { colors } from "./tokens";
+import { colors, text } from "./tokens";
 import produce from "immer";
 
 export const lightTheme: DefaultTheme = {
@@ -18,6 +18,9 @@ export const lightTheme: DefaultTheme = {
       title: colors.gray.gray100,
     },
   },
+  fontFamilies: text.fonts,
+  fontSizes: text.size,
+  fontWeights: text.weight,
 };
 
 export const darkTheme = produce(lightTheme, (draft) => {

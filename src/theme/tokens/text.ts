@@ -1,23 +1,18 @@
 const text = {
-  font: {
-    heading: '"Merriweather", Georgia, serif',
-    body: '"Open Sans", Helvetica, Arial, sans-serif',
-  },
+  fonts:
+    "Segoe UI, Helvetica, Arial, sans-serif, Merriweather, Georgia, serif, Open Sans ",
   size: {
-    heading: {
-      mobile: {
-        h1: 40,
-        h2: 28,
-      },
-      desktop: {},
+    mobile: {
+      title: 32,
+      subTitle: 26,
+      regular: 16,
+      small: 12,
     },
-    body: {
-      mobile: {
-        regular: 16,
-      },
-      desktop: {
-        regular: 24,
-      },
+    desktop: {
+      title: 32,
+      subTitle: 26,
+      regular: 16,
+      small: 12,
     },
   },
   weight: {
@@ -27,3 +22,24 @@ const text = {
   },
 };
 export default text;
+
+export interface ISizes {
+  mobile: {
+    title: number;
+    subTitle: number;
+    regular: number;
+    small: number;
+  };
+  desktop: {
+    title: number;
+    subTitle: number;
+    regular: number;
+    small: number;
+  };
+}
+
+export interface IWeight {
+  light: number;
+  regular: number;
+  bold: number;
+}
