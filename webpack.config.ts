@@ -4,8 +4,13 @@ import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
 const config: webpack.Configuration = {
   entry: "./src/index.tsx",
+  mode: "development",
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
       {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
@@ -19,10 +24,6 @@ const config: webpack.Configuration = {
             ],
           },
         },
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
       },
     ],
   },
@@ -42,7 +43,7 @@ const config: webpack.Configuration = {
     new ForkTsCheckerWebpackPlugin({
       async: false,
       eslint: {
-        files: "./src/**/*",
+        files: "./src/**/*.{ts,tsx,js,jsx}",
       },
     }),
   ],

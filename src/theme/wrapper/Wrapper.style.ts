@@ -13,7 +13,7 @@ export const Wrapper = createGlobalStyle`
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif, 'Merriweather', Georgia, serif, 'Open Sans'; 
+    font-family: ${({ theme }) => theme.fontFamilies};
     transition: all 0.25s linear;
   }
 
