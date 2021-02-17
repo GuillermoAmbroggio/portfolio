@@ -16,6 +16,15 @@ const reducer = (state = initialState, action: Actions): IState => {
         draftState.modeTheme =
           draftState.modeTheme === "dark" ? "light" : "dark";
         break;
+      case "SET_ES_LANGUAGE":
+        draftState.language = "es";
+        break;
+      case "SET_EN_LANGUAGE":
+        draftState.language = "en";
+        break;
+      case "SET_LOADING":
+        draftState.isLoading = !draftState.isLoading;
+        break;
       default:
         draftState;
     }

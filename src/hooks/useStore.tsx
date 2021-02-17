@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { IState } from "src/store/store.state";
+import { IState } from "../store/store.state";
 
 const useStore: () => IState = () => {
   return useSelector((state: IState) => state);

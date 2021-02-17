@@ -9,4 +9,28 @@ type ThemeActions =
       type: "SET_DARK_THEME";
     };
 
-export type Actions = ThemeActions;
+type LanguagesActions =
+  | {
+      type: "SET_ES_LANGUAGE";
+    }
+  | {
+      type: "SET_EN_LANGUAGE";
+    };
+
+type LoadingActions = {
+  type: "SET_LOADING";
+};
+
+type SagasActions =
+  | {
+      type: "SAG_ES_LANGUAGE";
+    }
+  | {
+      type: "SAG_EN_LANGUAGE";
+    };
+
+export type Actions =
+  | ThemeActions
+  | LanguagesActions
+  | LoadingActions
+  | SagasActions;
