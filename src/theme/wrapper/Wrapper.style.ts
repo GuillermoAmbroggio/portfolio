@@ -17,4 +17,9 @@ export const Wrapper = createGlobalStyle`
     transition: all 0.25s linear;
   }
 
+  html {
+    margin: 0;
+    padding:0
+  }
+
   `;

@@ -3,16 +3,16 @@ const text = {
     "Segoe UI, Helvetica, Arial, sans-serif, Merriweather, Georgia, serif, Open Sans ",
   size: {
     mobile: {
-      title: 32,
-      subTitle: 26,
-      regular: 16,
-      small: 12,
+      title: "32px",
+      subTitle: "26px",
+      regular: "16px",
+      small: "12px",
     },
     desktop: {
-      title: 32,
-      subTitle: 26,
-      regular: 16,
-      small: 12,
+      title: "32px",
+      subTitle: "26px",
+      regular: "16px",
+      small: "12px",
     },
   },
   weight: {
@@ -25,16 +25,16 @@ export default text;
 
 export interface ISizes {
   mobile: {
-    title: number;
-    subTitle: number;
-    regular: number;
-    small: number;
+    title: string;
+    subTitle: string;
+    regular: string;
+    small: string;
   };
   desktop: {
-    title: number;
-    subTitle: number;
-    regular: number;
-    small: number;
+    title: string;
+    subTitle: string;
+    regular: string;
+    small: string;
   };
 }
 
