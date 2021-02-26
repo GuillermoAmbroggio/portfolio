@@ -4,7 +4,7 @@ import { Spinner } from "./Spinner";
 
 const LoadingPage: React.FC = () => {
   return (
-    <div className="container">
+    <div className="contSpinner">
       <Spinner />
     </div>
   );
