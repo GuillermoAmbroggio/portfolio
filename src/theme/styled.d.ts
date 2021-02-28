@@ -16,6 +16,7 @@ declare module "styled-components" {
       };
       primary: string;
       secondary: string;
+      tertiary: string;
       background: string;
       texts: ITexts;
     };

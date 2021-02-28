@@ -1,9 +1,4 @@
-.asd {
-  color: yellow;
-  height: 300px;
-  background-color: aqua;
-}
-
-.asd ul {
-  margin-block-start: 0px;
+.textMenu {
+  transition: 2s;
+  font-size: 0px;
 }

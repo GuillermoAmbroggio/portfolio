@@ -10,7 +10,8 @@ export const lightTheme: DefaultTheme = {
       white: colors.common.white,
     },
     primary: colors.blue.darkBlue,
-    secondary: colors.gray.gray10,
+    secondary: colors.gray.gray30,
+    tertiary: colors.gray.gray10,
     background: colors.common.white,
     texts: {
       subTitle: colors.gray.gray80,
@@ -26,4 +27,10 @@ export const lightTheme: DefaultTheme = {
 export const darkTheme = produce(lightTheme, (draft) => {
   draft.palette.background = colors.common.black;
   draft.palette.texts.regular = colors.common.white;
+  draft.palette.texts.title = colors.common.white;
+  draft.palette.texts.subTitle = colors.common.white;
+  draft.palette.texts.title = colors.common.white;
+  draft.palette.primary = colors.blue.ligthBlue;
+  draft.palette.secondary = colors.common.white;
+  draft.palette.tertiary = colors.gray.gray100;
 });

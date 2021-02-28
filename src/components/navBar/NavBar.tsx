@@ -1,32 +1,45 @@
-import React from "react";
-import { Container } from "./navbar.style";
+import React, { useState } from "react";
+import { ContainerNavBar, List, ListItem, Link } from "./navbar.style";
 import "./navbar.css";
-import useDispatch from "../../hooks/useDispatch";
 import Writing from "../../copywriting/Writing";
+import Icon from "../atoms/icon/Icon";
 
 const NavBar: React.FC = ({}) => {
-  const dispatch = useDispatch();
   const texts = Writing();
+  const [active, setActive] = useState<
+    "home" | "about" | "projects" | "contact"
+  >("home");
+
   return (
-    <Container>
-      <div className="asd">
-        <ul>
-          <li>{texts.menuTop.home}</li>
-          <li>{texts.menuTop.about}</li>
-          <li>{texts.menuTop.projects}</li>
-          <li>{texts.menuTop.contact}</li>
-        </ul>
-      </div>
-      <button onClick={() => dispatch({ type: "TOGGLE_THEME" })}>
-        change Theme
-      </button>
-      <button onClick={() => dispatch({ type: "SAG_ES_LANGUAGE" })}>
-        change Language Spanish
-      </button>
-      <button onClick={() => dispatch({ type: "SAG_EN_LANGUAGE" })}>
-        change Language English
-      </button>
-    </Container>
+    <ContainerNavBar>
+      <div style={{ width: 150, backgroundColor: "green" }}></div>
+      <List>
+        <Link href="#home" onClick={() => setActive("home")}>
+          <ListItem active={active === "home"}>
+            <Icon name="fas fa-home" />
+            <span className="textMenu">{texts.menuTop.home}</span>
+          </ListItem>
+        </Link>
+        <Link href="#about" onClick={() => setActive("about")}>
+          <ListItem active={active === "about"}>
+            <Icon name="fas fa-user-alt" />
+            <span className="textMenu">{texts.menuTop.about}</span>
+          </ListItem>
+        </Link>
+        <Link href="#projects" onClick={() => setActive("projects")}>
+          <ListItem active={active === "projects"}>
+            <Icon name="fas fa-briefcase" />
+            <span className="textMenu">{texts.menuTop.projects}</span>
+          </ListItem>
+        </Link>
+        <Link href="#contact" onClick={() => setActive("contact")}>
+          <ListItem active={active === "contact"}>
+            <Icon name="fas fa-envelope" />
+            <span className="textMenu"> {texts.menuTop.contact}</span>
+          </ListItem>
+        </Link>
+      </List>
+    </ContainerNavBar>
   );
 };
 

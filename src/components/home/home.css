@@ -1,0 +1,12 @@
+.contText {
+  position: relative;
+  padding-left: 10vw;
+}
+
+.heroTitle {
+  font-size: 64px;
+}
+
+.heroSubtitle {
+  display: flex;
+}

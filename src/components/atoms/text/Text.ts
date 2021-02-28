@@ -10,6 +10,15 @@ export const Text = styled.p`
   }
 `;
 
+export const HeroTitle = styled.p`
+  font-size: ${({ theme }) => theme.fontSizes.desktop.heroTitle};
+  color: ${({ theme }) => theme.palette.texts.title};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.fontSizes.mobile.title};
+  }
+`;
+
 export const Title = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.desktop.title};
   color: ${({ theme }) => theme.palette.texts.title};
@@ -18,6 +27,11 @@ export const Title = styled.p`
   @media (max-width: 480px) {
     font-size: ${({ theme }) => theme.fontSizes.mobile.title};
   }
+`;
+export const SubTitleHero = styled.p`
+  font-size: ${({ theme }) => theme.fontSizes.desktop.subTitle};
+  color: ${({ theme }) => theme.palette.texts.subTitle};
+  font-weight: ${({ theme }) => theme.fontWeights.regular};
 `;
 
 export const SubTitle = styled.p`

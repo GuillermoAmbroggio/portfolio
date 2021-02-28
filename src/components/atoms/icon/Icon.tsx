@@ -1,5 +1,5 @@
 import React from "react";
-import useTheme from "../../../hooks/useTheme";
+
 //extends Omit<ButtonProps, 'type' | 'icon'>
 interface IIconProps
   extends Omit<
@@ -12,22 +12,9 @@ interface IIconProps
   name: string;
 }
 
-const Icon: React.FC<IIconProps> = ({
-  size = 24,
-  name,
-  color,
-  style,
-  ...rest
-}) => {
-  const theme = useTheme();
-  const colorUse = color ? color : theme.palette.texts.title;
-
+const Icon: React.FC<IIconProps> = ({ name, size, ...rest }) => {
   return (
-    <i
-      className={name}
-      style={{ color: colorUse, fontSize: size, ...style }}
-      {...rest}
-    />
+    <i className={name} {...rest} style={{ fontSize: size ? size : 20 }} />
   );
 };
 
