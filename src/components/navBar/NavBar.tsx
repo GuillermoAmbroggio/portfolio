@@ -1,18 +1,38 @@
 import React, { useState } from "react";
-import { ContainerNavBar, List, ListItem, Link } from "./navbar.style";
+import { ContainerNavBar, List, ListItem, Link, Toggle } from "./navbar.style";
 import "./navbar.css";
 import Writing from "../../copywriting/Writing";
 import Icon from "../atoms/icon/Icon";
+import useStore from "../../hooks/useStore";
+import useDispatch from "../../hooks/useDispatch";
 
 const NavBar: React.FC = ({}) => {
   const texts = Writing();
   const [active, setActive] = useState<
     "home" | "about" | "projects" | "contact"
   >("home");
+  const { modeTheme } = useStore();
+  const dispatch = useDispatch();
+  console.log("navbar 16", modeTheme);
+  const handleClick = () => {
+    console.log("etrno acaa");
+    dispatch({ type: "TOGGLE_THEME" });
+  };
 
   return (
     <ContainerNavBar>
-      <div style={{ width: 150, backgroundColor: "green" }}></div>
+      <div
+        style={{
+          width: "100%",
+        }}
+      >
+        <Toggle modeTheme={modeTheme}>
+          <input type="checkbox" />
+          <Icon name="fas fa-sun" size={25} />
+          <Icon name="fas fa-moon" size={25} />
+          <button onClick={() => handleClick()}></button>
+        </Toggle>
+      </div>
       <List>
         <Link href="#home" onClick={() => setActive("home")}>
           <ListItem active={active === "home"}>

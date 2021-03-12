@@ -14,6 +14,7 @@ const reducer = (state = initialState, action: Actions): IState => {
         draftState.modeTheme = "light";
         break;
       case "TOGGLE_THEME":
+        console.log("store.reducer 17");
         draftState.modeTheme === "dark"
           ? localStorage.removeItem("modeTheme")
           : localStorage.setItem("modeTheme", "darkTheme");
