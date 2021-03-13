@@ -18,6 +18,11 @@ interface ILanguageProps {
   language: "es" | "en";
 }
 
+interface IMenu {
+  activeMenu: boolean;
+  modeTheme?: "light" | "dark";
+}
+
 export const ContainerNavBar = styled.div`
   background-color: ${({ theme }) => theme.palette.background};
   border-bottom: solid 1px ${({ theme }) => theme.palette.secondary};
@@ -41,6 +46,53 @@ export const List = styled.ul`
   justify-content: flex-end;
   padding: 0px;
   margin: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const LeftList = styled.ul`
+  margin-block-start: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: ${({ theme }) => theme.fontSizes.desktop.regular};
+  color: ${({ theme }) => theme.palette.texts.title};
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+  margin: 0;
+
+  a {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .textMenu {
+    font-size: 16px;
+    margin-left: 8px;
+  }
+`;
+
+export const LeftListItem = styled.li<Props>`
+  background-color: ${(props) =>
+    props.active ? props.theme.palette.primary : props.theme.palette.tertiary};
+  padding: 15px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  color: ${(props) =>
+    props.active
+      ? props.theme.palette.background
+      : props.theme.palette.texts.title};
+
+  &:hover {
+    transition: 0s;
+
+    background-color: ${({ theme }) => theme.palette.primary};
+    color: ${({ theme }) => theme.palette.background};
+  }
 `;
 
 export const ListItem = styled.li<Props>`
@@ -70,6 +122,45 @@ export const ListItem = styled.li<Props>`
 export const Link = styled.a`
   &:visited {
     color: ${({ theme }) => theme.palette.texts.title};
+  }
+`;
+
+export const Menu = styled.div<IMenu>`
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme, activeMenu }) =>
+    activeMenu ? theme.palette.primary : theme.palette.texts.title};
+  cursor: pointer;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+export const LeftMenu = styled.div<IMenu>`
+  position: fixed;
+  height: calc(100vh - 65px);
+  top: 65px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: ${({ activeMenu }) => (activeMenu ? "300px" : "0px")};
+  background-color: ${({ modeTheme }) =>
+    modeTheme === "dark" ? "rgba(0, 0, 0, 0.7)" : "rgba(255, 255, 255, 0.9)"};
+  z-index: 2;
+  color: ${({ theme }) => theme.palette.background};
+
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  @media (min-width: 769px) {
+    display: none;
   }
 `;
 

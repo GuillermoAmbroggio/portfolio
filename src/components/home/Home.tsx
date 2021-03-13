@@ -9,7 +9,7 @@ const Home: React.FC = () => {
   const texts = Writing();
 
   return (
-    <ContainerHome>
+    <ContainerHome id="home">
       <div className="contText" data-aos="zoom-in" data-aos-delay="100">
         <HeroTitle>Guillermo Ambroggio</HeroTitle>
         <div className="heroSubtitle">

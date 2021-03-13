@@ -13,6 +13,9 @@ import useDispatch from "./hooks/useDispatch";
 
 AOS.init({
   duration: 1500,
+  easing: "ease-in-out",
+  mirror: false,
+  offset: -120,
 });
 
 const App: React.FC = () => {
@@ -50,8 +53,15 @@ const App: React.FC = () => {
       <div
         id="about"
         data-aos="fade-up"
-        style={{ height: "100vh", backgroundColor: "green" }}
-      ></div>
+        style={{
+          height: "110vh",
+          backgroundColor: "green",
+
+          paddingTop: 65,
+        }}
+      >
+        <div style={{ background: "orange", height: "100%" }}></div>
+      </div>
       <div
         id="projects"
         data-aos="fade-up"

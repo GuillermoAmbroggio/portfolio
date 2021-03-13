@@ -2,3 +2,7 @@
   transition: 2s;
   font-size: 0px;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
