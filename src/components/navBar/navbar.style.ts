@@ -1,11 +1,21 @@
 import styled from "styled-components";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
+import flagArg from "../../assets/navbar/flagarg.png";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
+import flagUsa from "../../assets/navbar/flagusa.png";
 
 interface Props {
   active: boolean;
 }
 
-interface ITProps {
+interface IThemeProps {
   modeTheme: "light" | "dark";
+}
+
+interface ILanguageProps {
+  language: "es" | "en";
 }
 
 export const ContainerNavBar = styled.div`
@@ -16,6 +26,9 @@ export const ContainerNavBar = styled.div`
   position: fixed;
   z-index: 2;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
 `;
 
 export const List = styled.ul`
@@ -26,7 +39,7 @@ export const List = styled.ul`
   color: ${({ theme }) => theme.palette.texts.title};
   align-items: center;
   justify-content: flex-end;
-  padding: 0px 30px 0px 30px;
+  padding: 0px;
   margin: 0;
 `;
 
@@ -60,15 +73,12 @@ export const Link = styled.a`
   }
 `;
 
-export const Toggle = styled.label<ITProps>`
+export const Toggle = styled.label<IThemeProps>`
   position: relative;
   width: 70px;
   border-radius: 30px;
   height: 35px;
   background-color: ${({ theme }) => theme.palette.tertiary};
-  position: relative;
-  left: 55%;
-  top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,14 +93,14 @@ export const Toggle = styled.label<ITProps>`
     color: ${({ theme }) => theme.palette.primary};
     transform: ${({ modeTheme }) =>
       modeTheme === "light" ? "translatey(0px)" : "translatey(50px)"};
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 2s;
+    transition: 2s;
   }
 
   .fa-moon {
     color: ${({ theme }) => theme.palette.primary};
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 2s;
+    transition: 2s;
     transform: ${({ modeTheme }) =>
       modeTheme === "light" ? "translatey(-50px)" : "translatey(0px)"};
   }
@@ -108,4 +118,40 @@ export const Toggle = styled.label<ITProps>`
   button:focus {
     outline: none;
   }
+`;
+
+export const Flags = styled.div`
+  width: 70px;
+  border-radius: 30px;
+  height: 35px;
+  background-color: ${({ theme }) => theme.palette.tertiary};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  cursor: pointer;
+`;
+
+export const Arg = styled.img<ILanguageProps>`
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: url(${flagArg});
+  background-size: cover;
+  transform: ${({ language }) =>
+    language === "en" ? "scale(0.5)" : "scale(1)"};
+  -webkit-transition: 1s;
+  transition: 1s;
+`;
+
+export const Usa = styled.img<ILanguageProps>`
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: url(${flagUsa});
+  background-size: cover;
+  transform: ${({ language }) =>
+    language === "es" ? "scale(0.5)" : "scale(1)"};
+  -webkit-transition: 1s;
+  transition: 1s;
 `;

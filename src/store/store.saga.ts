@@ -15,4 +15,11 @@ export function* HelloSag(): Generator<ForkEffect<never>, void, unknown> {
     yield delay(1000);
     yield put({ type: "SET_LOADING" });
   });
+
+  yield takeEvery("SAG_TOGGLE_LANGUAGE", function* asd() {
+    yield put({ type: "SET_LOADING" });
+    yield put({ type: "TOGGLE_LANGUAGE" });
+    yield delay(1000);
+    yield put({ type: "SET_LOADING" });
+  });
 }

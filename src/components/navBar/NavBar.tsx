@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { ContainerNavBar, List, ListItem, Link, Toggle } from "./navbar.style";
+import {
+  ContainerNavBar,
+  List,
+  ListItem,
+  Link,
+  Toggle,
+  Flags,
+  Arg,
+  Usa,
+} from "./navbar.style";
 import "./navbar.css";
 import Writing from "../../copywriting/Writing";
 import Icon from "../atoms/icon/Icon";
@@ -11,28 +20,31 @@ const NavBar: React.FC = ({}) => {
   const [active, setActive] = useState<
     "home" | "about" | "projects" | "contact"
   >("home");
-  const { modeTheme } = useStore();
+  const { modeTheme, language } = useStore();
   const dispatch = useDispatch();
-  console.log("navbar 16", modeTheme);
-  const handleClick = () => {
-    console.log("etrno acaa");
+
+  const handleToggle = () => {
     dispatch({ type: "TOGGLE_THEME" });
+  };
+
+  const handleLanguage = () => {
+    dispatch({ type: "SAG_TOGGLE_LANGUAGE" });
   };
 
   return (
     <ContainerNavBar>
-      <div
-        style={{
-          width: "100%",
-        }}
-      >
-        <Toggle modeTheme={modeTheme}>
-          <input type="checkbox" />
-          <Icon name="fas fa-sun" size={25} />
-          <Icon name="fas fa-moon" size={25} />
-          <button onClick={() => handleClick()}></button>
-        </Toggle>
-      </div>
+      <Flags onClick={() => handleLanguage()}>
+        <Arg language={language} />
+        <Usa language={language} />
+      </Flags>
+
+      <Toggle modeTheme={modeTheme}>
+        <input type="checkbox" />
+        <Icon name="fas fa-sun" size={25} />
+        <Icon name="fas fa-moon" size={25} />
+        <button onClick={() => handleToggle()}></button>
+      </Toggle>
+
       <List>
         <Link href="#home" onClick={() => setActive("home")}>
           <ListItem active={active === "home"}>
