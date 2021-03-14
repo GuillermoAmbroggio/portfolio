@@ -16,13 +16,18 @@ export const writingEn = {
     intro:
       "Graduated from Civil Engineering and Full Stack developer, I develop React and React Native applications, I also develop APIs with Express.js & Node.js using TypeScript or JavaScript, I am also passionate about investments in cryptocurrencies and the stock market.",
     subtitle: "Full Stack Developer & Civil Engineer",
+    birthdayTitle: "Birthday: ",
     birthday: "21 June 1994",
+    ageTitle: "Age: ",
     age: "26",
-    education: "university",
+    educationTitle: "Education: ",
+    education: "University",
+    cityTitle: "City: ",
     city: "Cordoba, Argentina",
+    emailTitle: "Email: ",
     email: "guillermoambroggio@gmail.com",
     personalInfo:
-      "Always positive life philosophy, working on the mind produces great benefits. I like to meditate and do a lot of physical exercise.",
+      "Always positive life philosophy, I believe that working the mind produces great benefits and that whatever you want you can achieve if you make an effort and focus on it. I like to meditate and do a lot of physical exercise.",
   },
   skills: {
     title: "SKILLS",

@@ -1,7 +1,5 @@
 import styled from "styled-components";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore
-import image from "../../assets/home/herobg.jpg";
+import image from "../../../assets/home/herobg.jpg";
 
 export const ContainerHome = styled.div`
   width: 100%;

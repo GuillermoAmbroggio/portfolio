@@ -12,17 +12,22 @@ export const writingES = {
     title2: "Desarrollador",
   },
   about: {
-    title: "RESUMEN",
+    title: "SOBRE MI",
     intro:
       "Graduado de Ingeniería Civil y desarrollador Full Stack, desarrollo aplicaciones React y React Native, tambien desarrollo APIs con Express.js & Node.js usando TypeScript o JavaScript. Soy un apasionado de inversiones en criptomonedas y en el mercado bursatil.",
     subtitle: "Full Stack Developer & Ingeniero Civil",
+    birthdayTitle: "Cumpleaños: ",
     birthday: "21 Junio 1994",
+    ageTitle: "Edad: ",
     age: "26",
-    education: "universitario",
+    educationTitle: "Educación: ",
+    education: "Universitario",
+    cityTitle: "Ciudad: ",
     city: "Cordoba, Argentina",
+    emailTitle: "Correo: ",
     email: "guillermoambroggio@gmail.com",
     personalInfo:
-      "Filosofía de vida siempre positivo, creo en que trabajar la mente produce grandes beneficios. Me gusta meditar y hacer mucho ejercicio físico.",
+      "Filosofía de vida siempre positivo, creo en que trabajar la mente produce grandes beneficios y que todo lo que quieras lo puedes conseguir si te esfuerzas y enfocas en ello. Me gusta meditar y hacer mucho ejercicio físico.",
   },
   skills: {
     title: "HABILIDADES",

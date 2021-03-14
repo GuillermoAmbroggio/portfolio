@@ -1,9 +1,5 @@
 import styled from "styled-components";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore
 import flagArg from "../../assets/navbar/flagarg.png";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore
 import flagUsa from "../../assets/navbar/flagusa.png";
 
 interface Props {
