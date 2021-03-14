@@ -6,16 +6,19 @@ import { Text, Title, SubTitle } from "./components/atoms/text/Text";
 import useTheme from "./hooks/useTheme";
 import Icon from "./components/atoms/icon/Icon";
 import ProgressBar from "./components/atoms/progressBar/ProgressBar";
-import Home from "./components/home/Home";
+import Home from "./components/sections/home/Home";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import useDispatch from "./hooks/useDispatch";
+import About from "./components/sections/about/About";
 
 AOS.init({
   duration: 1500,
   easing: "ease-in-out",
-  mirror: false,
-  offset: -120,
+  mirror: true,
+  once: false,
+  offset: 200,
+  anchorPlacement: "top-bottom",
 });
 
 const App: React.FC = () => {
@@ -28,6 +31,8 @@ const App: React.FC = () => {
       {isLoading ? <LoadingPage /> : null}
       <NavBar />
       <Home />
+      <About />
+
       <div data-aos="fade-up">
         My Reactttasdasfjsdkf
         <h1>TITULO</h1>
@@ -51,7 +56,6 @@ const App: React.FC = () => {
         </button>
       </div>
       <div
-        id="about"
         data-aos="fade-up"
         style={{
           height: "110vh",

@@ -1,8 +1,8 @@
 import React from "react";
 import "./home.css";
-import { HeroTitle, SubTitleHero } from "../atoms/text/Text";
-import TypeWriter from "../molecules/typeWriter/TypeWriter";
-import Writing from "../../copywriting/Writing";
+import { HeroTitle, SubTitleHero } from "../../atoms/text/Text";
+import TypeWriter from "../../molecules/typeWriter/TypeWriter";
+import Writing from "../../../copywriting/Writing";
 import { ContainerHome } from "./home.style";
 
 const Home: React.FC = () => {

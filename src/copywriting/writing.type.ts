@@ -15,10 +15,15 @@ export interface IWriting {
     title: string;
     intro: string;
     subtitle: string;
+    birthdayTitle: string;
     birthday: string;
+    ageTitle: string;
     age: string;
+    educationTitle: string;
     education: string;
+    cityTitle: string;
     city: string;
+    emailTitle: string;
     email: string;
     personalInfo: string;
   };
