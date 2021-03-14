@@ -1,9 +1,8 @@
-.asd {
-  color: yellow;
-  height: 300px;
-  background-color: aqua;
+.textMenu {
+  transition: 2s;
+  font-size: 0px;
 }
-
-.asd ul {
-  margin-block-start: 0px;
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

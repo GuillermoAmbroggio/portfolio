@@ -11,6 +11,9 @@ type ThemeActions =
 
 type LanguagesActions =
   | {
+      type: "TOGGLE_LANGUAGE";
+    }
+  | {
       type: "SET_ES_LANGUAGE";
     }
   | {
@@ -22,6 +25,9 @@ type LoadingActions = {
 };
 
 type SagasActions =
+  | {
+      type: "SAG_TOGGLE_LANGUAGE";
+    }
   | {
       type: "SAG_ES_LANGUAGE";
     }
