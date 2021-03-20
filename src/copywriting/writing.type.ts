@@ -33,6 +33,7 @@ export interface IWriting {
   resume: {
     title: string;
     education: {
+      title: string;
       1: {
         title: string;
         period: string;
@@ -46,6 +47,7 @@ export interface IWriting {
       };
     };
     professionalExperiencie: {
+      title: string;
       1: {
         title: string;
         period: string;

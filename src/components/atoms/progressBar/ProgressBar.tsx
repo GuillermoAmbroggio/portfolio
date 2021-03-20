@@ -1,8 +1,10 @@
 import React from "react";
-import useTheme from "../../../hooks/useTheme";
-import "./progressbar.css";
+import { ContainerProgressBar, Bar } from "./progressbar.style";
+import { Row } from "../../../templates/Layouts.style";
+import { SmallText } from "../text/Text";
 
 interface IProgressBarProps {
+  title: string;
   status: string;
   statusColor?: string;
   backgroundColor?: string;
@@ -12,27 +14,17 @@ const ProgressBar: React.FC<IProgressBarProps> = ({
   status,
   backgroundColor,
   statusColor,
+  title,
 }) => {
-  const theme = useTheme();
-  const background_color = backgroundColor
-    ? backgroundColor
-    : theme.palette.secondary;
-  const status_color = statusColor ? statusColor : theme.palette.primary;
-
   return (
-    <div
-      className="contProgressBar"
-      style={{
-        backgroundColor: background_color,
-      }}
-    >
-      <div
-        style={{
-          height: "100%",
-          backgroundColor: status_color,
-          width: status,
-        }}
-      ></div>
+    <div>
+      <Row style={{ justifyContent: "space-between", padding: "10px 0px" }}>
+        <SmallText>{title}</SmallText>
+        <SmallText>{status}</SmallText>
+      </Row>
+      <ContainerProgressBar backgroundColor={backgroundColor}>
+        <Bar status={status} statusColor={statusColor} />
+      </ContainerProgressBar>
     </div>
   );
 };

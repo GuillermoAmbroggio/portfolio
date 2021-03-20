@@ -10,6 +10,26 @@ export const Text = styled.p`
   }
 `;
 
+export const SmallText = styled.p`
+  font-size: ${({ theme }) => theme.fontSizes.desktop.small};
+  color: ${({ theme }) => theme.palette.texts.title};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+
+  @media (max-width: 480px) {
+    font-size: ${({ theme }) => theme.fontSizes.mobile.small};
+  }
+`;
+
+export const BoldText = styled.p`
+  font-size: ${({ theme }) => theme.fontSizes.desktop.regular};
+  color: ${({ theme }) => theme.palette.texts.regular};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+
+  @media (max-width: 480px) {
+    font-size: ${({ theme }) => theme.fontSizes.mobile.regular};
+  }
+`;
+
 export const HeroTitle = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.desktop.heroTitle};
   color: ${({ theme }) => theme.palette.texts.title};

@@ -10,6 +10,8 @@ import {
 import Writing from "../../../copywriting/Writing";
 import profileImg from "../../../assets/about/profile.png";
 import AboutInfo from "../../molecules/aboutInfo/AboutInfo";
+import Skills from "../../../organisms/skills/Skills";
+import Resume from "../../../organisms/resume/Resume";
 
 const About: React.FC = () => {
   const texts = Writing();
@@ -70,6 +72,8 @@ const About: React.FC = () => {
           </Column>
         </Row>
       </ContainerAbout>
+      <Skills />
+      <Resume />
     </>
   );
 };
