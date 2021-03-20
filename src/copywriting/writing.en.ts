@@ -35,6 +35,7 @@ export const writingEn = {
   resume: {
     title: "RESUME",
     education: {
+      title: "Education: ",
       1: {
         title: "Full Stack Developer",
         period: "2020-2020",
@@ -48,6 +49,7 @@ export const writingEn = {
       },
     },
     professionalExperiencie: {
+      title: "Professional Experiencie: ",
       1: {
         title: "Vitau (YC Company)",
         period: "SEP 2020 - PRESENT",
