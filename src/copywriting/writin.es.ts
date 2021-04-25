@@ -70,6 +70,64 @@ export const writingES = {
   },
   projects: {
     title: "PROYECTOS",
+    projectsDetails: {
+      category: "Categoria: ",
+      client: "Cliente: ",
+      date: "Fecha del Proyecto: ",
+    },
+    Myprojects: [
+      {
+        id: 1,
+        title: "Ten Shop - Comercio electronico",
+        category: "Web",
+        client: "Henry",
+        date: "Julio, 2020",
+        url: {
+          title: "Ten Shop",
+          url: "https://github.com/GuillermoAmbroggio/TenShop",
+        },
+        description: {
+          title: "Descripción",
+          content:
+            "Este es el primer proyecto que desarrollé como programador, formó parte del trabajo final del curso Full Stack Developer en Henry.",
+        },
+      },
+      {
+        id: 2,
+        title: "Vitau - Comercio electronico",
+        category: "App",
+        client: "Vitau.mx",
+        date: "Marzo, 2021",
+        url: {
+          title: "Vitau App - PlayStore",
+          url:
+            "https://play.google.com/store/apps/details?id=mx.vitau.androidvitau",
+        },
+        description: {
+          title: "Descripción",
+          content:
+            "Aplicacion desarrollada con React Native, Typescript, no puedo compartir el repositorio privado de la empresa, pero si la quieres probar puedes descargartela desde PlayStore para android, o AppStore para Ios.",
+        },
+      },
+      {
+        id: 3,
+        title: "Top Gif",
+        category: "Web",
+        client: "Propio",
+        date: "Agosto, 2020",
+        url: {
+          title: "Top Gif - Web",
+          title2: "Top Gif - GitHub",
+          url2: "https://github.com/GuillermoAmbroggio/TopGifs",
+          url: "https://topgifs.vercel.app/",
+        },
+        description: {
+          title: "Descripción",
+          content:
+            "Este proyecto consume los mejores gif de la api de Gipsy y los muestra, en el se puede editar la cantidad de gif y buscar gif por temas.",
+        },
+      },
+    ],
   },
   contact: {
     title: "CONTACTO",

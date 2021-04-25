@@ -1,6 +1,6 @@
 import React from "react";
 import { ContainerProgressBar, Bar } from "./progressbar.style";
-import { Row } from "../../../templates/Layouts.style";
+import { RowResponsive } from "../../../templates/Layouts.style";
 import { SmallText } from "../text/Text";
 
 interface IProgressBarProps {
@@ -18,10 +18,12 @@ const ProgressBar: React.FC<IProgressBarProps> = ({
 }) => {
   return (
     <div>
-      <Row style={{ justifyContent: "space-between", padding: "10px 0px" }}>
+      <RowResponsive
+        style={{ justifyContent: "space-between", padding: "10px 0px" }}
+      >
         <SmallText>{title}</SmallText>
         <SmallText>{status}</SmallText>
-      </Row>
+      </RowResponsive>
       <ContainerProgressBar backgroundColor={backgroundColor}>
         <Bar status={status} statusColor={statusColor} />
       </ContainerProgressBar>

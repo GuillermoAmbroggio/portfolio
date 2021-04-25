@@ -8,7 +8,11 @@ import {
   SmallText,
 } from "../../components/atoms/text/Text";
 import Writing from "../../copywriting/Writing";
-import { Row, ColumnLeft, ColumnRight } from "../../templates/Layouts.style";
+import {
+  RowResponsive,
+  ColumnLeft,
+  ColumnRight,
+} from "../../templates/Layouts.style";
 import ColumnResume from "../../components/molecules/columnResume/ColumnResume";
 import useTheme from "../../hooks/useTheme";
 
@@ -19,7 +23,7 @@ const Resume: React.FC = () => {
   return (
     <ContainerResume data-aos="fade-up">
       <Title>{texts.resume.title}</Title>
-      <Row style={{ marginTop: "20px" }}>
+      <RowResponsive style={{ marginTop: "20px" }}>
         <ColumnLeft>
           <SubTitle style={{ marginBottom: "15px" }}>
             {texts.resume.education.title}
@@ -90,7 +94,7 @@ const Resume: React.FC = () => {
             </Text>
           </ColumnResume>
         </ColumnRight>
-      </Row>
+      </RowResponsive>
     </ContainerResume>
   );
 };

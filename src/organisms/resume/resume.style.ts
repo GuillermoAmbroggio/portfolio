@@ -9,6 +9,9 @@ export const ContainerResume = styled.div`
   @media (min-width: 1024px) {
     padding: 60px 150px 0px 150px;
   }
+  @media (max-width: 376px) {
+    padding: 60px 20px 0px 20px;
+  }
 `;
 
 export const Date = styled.div`

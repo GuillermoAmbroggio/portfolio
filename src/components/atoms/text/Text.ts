@@ -63,3 +63,19 @@ export const SubTitle = styled.p`
     font-size: ${({ theme }) => theme.fontSizes.mobile.subTitle};
   }
 `;
+
+export const Link = styled.a`
+  font-size: ${({ theme }) => theme.fontSizes.desktop.regular};
+  color: ${({ theme }) => theme.palette.primary};
+  font-weight: ${({ theme }) => theme.fontWeights.regular};
+
+  @media (max-width: 480px) {
+    font-size: ${({ theme }) => theme.fontSizes.mobile.regular};
+  }
+
+  &:visited {
+  }
+  &:hover {
+    font-weight: ${({ theme }) => theme.fontWeights.bold};
+  }
+`;
