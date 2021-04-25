@@ -9,6 +9,9 @@ export const ContainerSkills = styled.div`
   @media (min-width: 1024px) {
     padding: 0px 150px;
   }
+  @media (max-width: 376px) {
+    padding: 0px 20px;
+  }
 `;
 
 export const RowSkills = styled.div`

@@ -6,7 +6,6 @@ import Home from "./components/sections/home/Home";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import About from "./components/sections/about/About";
-
 import Projects from "./components/sections/projects/Projects";
 
 AOS.init({

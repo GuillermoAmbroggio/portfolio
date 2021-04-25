@@ -10,7 +10,6 @@ function TypeWriter({ strings }) {
 
   useEffect(() => {
     if (isLoading) {
-      console.log("entro al useefect 11");
       location.reload();
     }
   }, [isLoading]);
@@ -32,7 +31,6 @@ function TypeWriter({ strings }) {
     this.loopNum = 0;
     this.period = 2000;
     this.isDeleting = false;
-    console.log("seejecutaremove", asd);
   };
 
   TxtRotate.prototype.edit = function (el, toRotate, period) {

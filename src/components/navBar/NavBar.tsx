@@ -49,24 +49,6 @@ const NavBar: React.FC = ({}) => {
     setActiveMenu(!activeMenu);
   };
 
-  /*   document.addEventListener("DOMContentLoaded", function () {
-    // this function runs when the DOM is ready, i.e. when the document has been parsed
-    const contact = document.getElementById("contact");
-    if (contact) {
-      console.log("navbar 60");
-      contact.addEventListener("scroll", () => {
-        const position = window.scrollY;
-        console.log("navbar 633333", position);
-      });
-    }
-    console.log(
-      "navbar 65",
-      contact?.offsetTop,
-      contact?.offsetHeight,
-      window.scrollY
-    );
-  }); */
-
   document.addEventListener("DOMContentLoaded", function () {
     const about = document.getElementById("about")?.offsetTop;
     const projects = document.getElementById("projects")?.offsetTop;
@@ -91,24 +73,6 @@ const NavBar: React.FC = ({}) => {
     });
   });
 
-  /* document.addEventListener("scroll", () => {
-    const position = window.scrollY + 200;
-    console.log("navbar 76", position, about, projects, contact);
-    if (position < screen.height) {
-      setActive("home");
-    }
-    if (about && projects && contact) {
-      if (position > about && position < projects) {
-        setActive("about");
-      }
-      if (position > projects && position < contact) {
-        setActive("projects");
-      }
-      if (position > contact) {
-        setActive("contact");
-      }
-    }
-  }); */
   return (
     <div>
       <LeftMenu activeMenu={activeMenu} modeTheme={modeTheme}>

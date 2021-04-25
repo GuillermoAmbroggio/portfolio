@@ -65,6 +65,26 @@ export interface IWriting {
   };
   projects: {
     title: string;
+    projectsDetails: {
+      category: string;
+      client: string;
+      date: string;
+    };
+    Myprojects: {
+      id: number;
+      title: string;
+      category: string;
+      client: string;
+      date: string;
+      url: {
+        title: string;
+        title2?: string;
+        url: string;
+        url2?: string;
+      };
+
+      description: { title: string; content: string };
+    }[];
   };
   contact: {
     title: string;

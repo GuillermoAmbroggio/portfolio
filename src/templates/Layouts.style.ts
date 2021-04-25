@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
-export const Row = styled.div`
+export const RowResponsive = styled.div`
   display: flex;
   width: 100%;
   @media (max-width: 768px) {
     flex-direction: column;
   }
+`;
+
+export const Row = styled.div`
+  display: flex;
+  width: 100%;
 `;
 
 export const Column = styled.div`

@@ -17,6 +17,9 @@ export const ContainerAbout = styled.div`
   @media (min-width: 1024px) {
     padding: 60px 150px;
   }
+  @media (max-width: 376px) {
+    padding: 60px 20px;
+  }
 `;
 
 export const Row = styled.div`
@@ -37,7 +40,6 @@ export const ImgProfile = styled.img`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
 
   ul {
     list-style: none;
