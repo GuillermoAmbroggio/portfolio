@@ -12,7 +12,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "baseUrl": "./src"
+    "outDir": "./build"
+    //"baseUrl": "./"
   },
   "include": ["src"]
 }

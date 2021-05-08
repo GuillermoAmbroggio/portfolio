@@ -1,12 +1,25 @@
 const colors = {
-  primary: {
-    primary1: "#172121",
-    primary2: "#444554",
-    primary3: "#7F7B82",
+  common: {
+    black: "#000000",
+    white: "#FFFFFF",
   },
-  secondary: {
-    secondary1: "#BFACB5",
-    secondary2: "red",
+  blue: {
+    darkBlue: "#0563bb",
+    ligthBlue: "#51d1f6",
+  },
+  gray: {
+    gray10: "#f2f3f5",
+    gray30: "#dddddd",
+    gray50: "#212529",
+    gray80: "#728394",
+    gray100: "#45505b",
+  },
+  green: {
+    green30: "38ff3c",
+    green50: "#008f39",
+  },
+  red: {
+    red50: "#ff0000",
   },
 };
 export default colors;
