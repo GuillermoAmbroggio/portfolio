@@ -17,7 +17,7 @@ export const ContainerSkills = styled.div`
 export const RowSkills = styled.div`
   display: flex;
   height: 250px;
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
   @media (max-width: 768px) {
     height: auto;

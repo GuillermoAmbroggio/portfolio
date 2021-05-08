@@ -18,6 +18,8 @@ declare module "styled-components" {
       secondary: string;
       tertiary: string;
       background: string;
+      error: string;
+      success: string;
       texts: ITexts;
     };
     fontFamilies: string;

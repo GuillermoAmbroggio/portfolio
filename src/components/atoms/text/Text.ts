@@ -43,6 +43,7 @@ export const Title = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.desktop.title};
   color: ${({ theme }) => theme.palette.texts.title};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
+  text-decoration-line: underline;
 
   @media (max-width: 480px) {
     font-size: ${({ theme }) => theme.fontSizes.mobile.title};

@@ -1,6 +1,8 @@
 import path from "path";
 import webpack from "webpack";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require("dotenv").config();
 
 const config: webpack.Configuration = {
   entry: "./src/index.tsx",
@@ -53,6 +55,12 @@ const config: webpack.Configuration = {
         files: "./src/**/*.{ts,tsx,js,jsx}",
       },
     }),
+    new webpack.EnvironmentPlugin([
+      "NODE_ENV",
+      "CONTACT_SERVICE_ID",
+      "CONTACT_TEMPLATE_ID",
+      "CONTACT_USER_ID",
+    ]),
   ],
 };
 
