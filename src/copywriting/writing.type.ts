@@ -116,4 +116,9 @@ export interface IWriting {
       errorMessage: string;
     };
   };
+  footer: {
+    made: string;
+    by: string;
+    text: string;
+  };
 }
