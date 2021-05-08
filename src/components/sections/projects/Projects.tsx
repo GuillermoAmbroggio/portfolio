@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
     <>
       <AnchorProjects id="projects" />
       <ContainerProjects data-aos="fade-up">
-        <Title>{texts.projects.title}</Title>
+        <Title style={{ marginBottom: 20 }}>{texts.projects.title}</Title>
         <ContainerCards>
           {texts.projects.Myprojects.map((e, i) => {
             return (

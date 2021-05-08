@@ -100,5 +100,20 @@ export interface IWriting {
       title: string;
       info: string;
     };
+    form: {
+      name: string;
+      email: string;
+      subject: string;
+      message: string;
+      send: string;
+      errorsInputs: {
+        required: string;
+        email: string;
+        message: string;
+        minLong: string;
+      };
+      successMessage: string;
+      errorMessage: string;
+    };
   };
 }

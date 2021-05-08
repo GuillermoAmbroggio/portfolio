@@ -23,7 +23,7 @@ const Resume: React.FC = () => {
   return (
     <ContainerResume data-aos="fade-up">
       <Title>{texts.resume.title}</Title>
-      <RowResponsive style={{ marginTop: "20px" }}>
+      <RowResponsive style={{ marginTop: "40px" }}>
         <ColumnLeft>
           <SubTitle style={{ marginBottom: "15px" }}>
             {texts.resume.education.title}

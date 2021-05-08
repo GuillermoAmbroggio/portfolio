@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Spinner = styled.div`
+interface ISpinner {
+  size?: string;
+}
+
+export const Spinner = styled.div<ISpinner>`
   border: 16px solid #0042a4;
   border-radius: 50%;
   border-width: 16px;
@@ -9,8 +13,8 @@ export const Spinner = styled.div`
   border-right-color: ${({ theme }) => theme.palette.primary};
   border-bottom-color: ${({ theme }) => theme.palette.secondary};
   border-left-color: ${({ theme }) => theme.palette.secondary};
-  width: 100px;
-  height: 100px;
+  width: ${({ size }) => (size ? size : "100px")};
+  height: ${({ size }) => (size ? size : "100px")};
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 

@@ -13,6 +13,8 @@ export const lightTheme: DefaultTheme = {
     secondary: colors.gray.gray30,
     tertiary: colors.gray.gray10,
     background: colors.common.white,
+    success: colors.green.green50,
+    error: colors.red.red50,
     texts: {
       subTitle: colors.gray.gray80,
       regular: colors.gray.gray50,

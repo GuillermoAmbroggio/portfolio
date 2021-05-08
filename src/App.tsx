@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import About from "./components/sections/about/About";
 import Projects from "./components/sections/projects/Projects";
+import Contact from "./components/sections/contact/Contact";
 
 AOS.init({
   duration: 1500,
@@ -26,11 +27,7 @@ const App: React.FC = () => {
       <Home />
       <About />
       <Projects />
-      <div
-        id="contact"
-        data-aos="fade-up"
-        style={{ height: "100vh", backgroundColor: "blue" }}
-      ></div>
+      <Contact />
     </div>
   );
 };

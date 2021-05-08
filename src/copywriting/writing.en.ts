@@ -140,6 +140,22 @@ export const writingEn = {
       title: "Linkedin",
       info: "/in/guillermoambroggio/",
     },
+    form: {
+      name: "Your Name",
+      email: "Your Email",
+      subject: "Subject",
+      message: "Message",
+      send: "Send Message",
+      errorsInputs: {
+        required: "This field is required.",
+        email: "Enter a valid email address.",
+        message: "Message too short.",
+        minLong: "Must be at least 3 characters",
+      },
+      successMessage:
+        "I have received your message, I will answer you shortly, thank you!",
+      errorMessage: "An error occurred, please try again later.",
+    },
   },
 };
 
