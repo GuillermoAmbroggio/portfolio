@@ -1,6 +1,6 @@
 {
   "name": "protafolio",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --open",
     "build": "webpack --mode production"

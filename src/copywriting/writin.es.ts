@@ -160,6 +160,11 @@ export const writingES = {
       errorMessage: "Ocurrio un error, por favor inténtelo mas tarde.",
     },
   },
+  footer: {
+    made: "Echo con",
+    by: "por",
+    text: "Gracias por tu visita, espero que te haya gustado, saludos!",
+  },
 };
 
 export default writingES;

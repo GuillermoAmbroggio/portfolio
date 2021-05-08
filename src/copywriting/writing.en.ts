@@ -157,6 +157,11 @@ export const writingEn = {
       errorMessage: "An error occurred, please try again later.",
     },
   },
+  footer: {
+    made: "Made with",
+    by: "by",
+    text: "Thanks for your visit, I hope you liked it, greetings!",
+  },
 };
 
 export default writingEn;
