@@ -13,7 +13,6 @@
     "noEmit": true,
     "jsx": "react",
     "outDir": "./build"
-    //"baseUrl": "./"
   },
   "include": ["src"]
 }
