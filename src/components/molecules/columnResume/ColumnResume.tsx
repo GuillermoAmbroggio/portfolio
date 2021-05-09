@@ -5,7 +5,7 @@ import {
   ContainerLeft,
   ContainerColumnResume,
 } from "./columnresume.style";
-import { Column } from "../../../templates/Layouts.style";
+import { Column } from "../../templates/Layouts.style";
 
 interface IColumnResume {
   style?: React.CSSProperties;

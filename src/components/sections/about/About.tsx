@@ -10,8 +10,8 @@ import {
 import Writing from "../../../copywriting/Writing";
 import profileImg from "../../../assets/about/profile.png";
 import AboutInfo from "../../molecules/aboutInfo/AboutInfo";
-import Skills from "../../../organisms/skills/Skills";
-import Resume from "../../../organisms/resume/Resume";
+import Skills from "../../organisms/skills/Skills";
+import Resume from "../../organisms/resume/Resume";
 
 const About: React.FC = () => {
   const texts = Writing();
@@ -21,9 +21,7 @@ const About: React.FC = () => {
       <AnchorAbout id="about" />
       <ContainerAbout data-aos="fade-up">
         <Title>{texts.about.title}</Title>
-        <Text style={{ textAlign: "center", margin: "40px 0px" }}>
-          {texts.about.intro}
-        </Text>
+        <Text style={{ margin: "40px 0px" }}>{texts.about.intro}</Text>
         <Row>
           <ImgProfile src={profileImg} />
           <Column style={{ margin: 20 }}>

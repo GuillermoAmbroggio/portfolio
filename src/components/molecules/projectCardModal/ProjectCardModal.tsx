@@ -2,8 +2,8 @@ import React from "react";
 import { LineCard, SubTitle } from "./projectcardmodal.style";
 import { BoldText, Text, Link } from "../../atoms/text/Text";
 import Writing from "../../../copywriting/Writing";
-import { Row } from "../../../templates/Layouts.style";
-import { IProjectsDetails } from "../../../organisms/projectDetail/ProjectDetail";
+import { Row } from "../../templates/Layouts.style";
+import { IProjectsDetails } from "../../organisms/projectDetail/ProjectDetail";
 import BoxCard from "../../atoms/boxCard/BoxCard";
 
 interface IProjectCardProps {
