@@ -137,6 +137,8 @@ export const Menu = styled.div<IMenu>`
 `;
 
 export const LeftMenu = styled.div<IMenu>`
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   position: fixed;
   height: calc(100vh - 65px);
   top: 65px;

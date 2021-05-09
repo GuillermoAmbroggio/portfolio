@@ -21,9 +21,7 @@ const About: React.FC = () => {
       <AnchorAbout id="about" />
       <ContainerAbout data-aos="fade-up">
         <Title>{texts.about.title}</Title>
-        <Text style={{ textAlign: "center", margin: "40px 0px" }}>
-          {texts.about.intro}
-        </Text>
+        <Text style={{ margin: "40px 0px" }}>{texts.about.intro}</Text>
         <Row>
           <ImgProfile src={profileImg} />
           <Column style={{ margin: 20 }}>

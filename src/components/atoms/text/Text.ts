@@ -6,6 +6,7 @@ export const Text = styled.p`
   font-weight: ${({ theme }) => theme.fontWeights.regular};
 
   @media (max-width: 480px) {
+    justify-content: left;
     font-size: ${({ theme }) => theme.fontSizes.mobile.regular};
   }
 `;

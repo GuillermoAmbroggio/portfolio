@@ -20,3 +20,14 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .contText {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .heroSubtitle {
+    justify-content: center;
+  }
+}
