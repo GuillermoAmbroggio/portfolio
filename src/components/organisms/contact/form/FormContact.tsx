@@ -7,15 +7,15 @@ import {
   ContainerToast,
 } from "./formcontact.style";
 import { RowResponsive } from "../../../templates/Layouts.style";
-import Writing from "../../../copywriting/Writing";
-import { Button } from "../../../components/atoms/button/button.style";
+import Writing from "../../../../copywriting/Writing";
+import { Button } from "../../../atoms/button/button.style";
 import emailjs from "emailjs-com";
-import Input from "../../../components/atoms/input/Input";
-import TextArea from "../../../components/atoms/input/TextArea";
+import Input from "../../../atoms/input/Input";
+import TextArea from "../../../atoms/input/TextArea";
 import { useFormik } from "formik";
 import validateInput from "./validateInput";
-import Toast from "../../../components/molecules/toast/Toast";
-import { Spinner } from "../../../components/utils/loadingPage/Spinner";
+import Toast from "../../../molecules/toast/Toast";
+import { Spinner } from "../../../utils/loadingPage/Spinner";
 
 const CONTACT_SERVICE_ID = process.env.CONTACT_SERVICE_ID;
 const CONTACT_TEMPLATE_ID = process.env.CONTACT_TEMPLATE_ID;

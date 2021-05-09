@@ -8,8 +8,8 @@ import { Title } from "../../atoms/text/Text";
 import Writing from "../../../copywriting/Writing";
 import ProjectDetail, {
   IProjectsDetails,
-} from "../../../organisms/projectDetail/ProjectDetail";
-import Modal from "../../../organisms/modal/Modal";
+} from "../../organisms/projectDetail/ProjectDetail";
+import Modal from "../../organisms/modal/Modal";
 import ProjectCard from "../../molecules/projectCard/ProjectCard";
 
 const Projects: React.FC = () => {

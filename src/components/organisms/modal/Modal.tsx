@@ -5,8 +5,8 @@ import {
   ButtonClose,
   ContainerClose,
 } from "./modal.style";
-import Icon from "../../components/atoms/icon/Icon";
-import useStore from "../../hooks/useStore";
+import Icon from "../../atoms/icon/Icon";
+import useStore from "../../../hooks/useStore";
 
 interface IModal {
   open: boolean;

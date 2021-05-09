@@ -1,5 +1,5 @@
 import * as Yup from "yup";
-import { IWriting } from "../../../copywriting/writing.type";
+import { IWriting } from "../../../../copywriting/writing.type";
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const validateInput = (texts: IWriting) => {

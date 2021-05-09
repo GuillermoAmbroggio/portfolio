@@ -6,15 +6,15 @@ import {
   BoldText,
   Text,
   SmallText,
-} from "../../components/atoms/text/Text";
-import Writing from "../../copywriting/Writing";
+} from "../../atoms/text/Text";
+import Writing from "../../../copywriting/Writing";
 import {
   RowResponsive,
   ColumnLeft,
   ColumnRight,
 } from "../../templates/Layouts.style";
-import ColumnResume from "../../components/molecules/columnResume/ColumnResume";
-import useTheme from "../../hooks/useTheme";
+import ColumnResume from "../../molecules/columnResume/ColumnResume";
+import useTheme from "../../../hooks/useTheme";
 
 const Resume: React.FC = () => {
   const texts = Writing();

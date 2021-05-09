@@ -2,7 +2,7 @@ import React from "react";
 import { SubTitle, Text } from "../../atoms/text/Text";
 import Icon from "../../atoms/icon/Icon";
 import { ContainerIcon, Image, ContainerCard } from "./projectcard.style";
-import useImages from "../../../organisms/projectDetail/useImages";
+import useImages from "../../organisms/projectDetail/useImages";
 import useStore from "../../../hooks/useStore";
 
 interface IProjectCardProps {
