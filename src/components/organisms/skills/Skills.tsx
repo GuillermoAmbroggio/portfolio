@@ -1,7 +1,7 @@
 import React from "react";
-import ProgressBar from "../../components/atoms/progressBar/ProgressBar";
-import { Title } from "../../components/atoms/text/Text";
-import Writing from "../../copywriting/Writing";
+import ProgressBar from "../../atoms/progressBar/ProgressBar";
+import { Title } from "../../atoms/text/Text";
+import Writing from "../../../copywriting/Writing";
 import { ColumnLeft, ColumnRight } from "../../templates/Layouts.style";
 import { ContainerSkills, RowSkills } from "./skills.style";
 

@@ -9,9 +9,9 @@ import {
   ContainerTexts,
   FirstTexts,
 } from "./footer.style";
-import Icon from "../../components/atoms/icon/Icon";
-import { Text } from "../../components/atoms/text/Text";
-import Writing from "../../copywriting/Writing";
+import Icon from "../../atoms/icon/Icon";
+import { Text } from "../../atoms/text/Text";
+import Writing from "../../../copywriting/Writing";
 
 const Footer: React.FC = () => {
   const texts = Writing();

@@ -5,7 +5,7 @@ import {
   Title,
   Description,
 } from "./itemcontact.style";
-import Icon from "../../../components/atoms/icon/Icon";
+import Icon from "../../../atoms/icon/Icon";
 import { Column } from "../../../templates/Layouts.style";
 
 interface IItemContactProps {

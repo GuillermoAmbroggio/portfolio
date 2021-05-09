@@ -1,6 +1,6 @@
 import React from "react";
 import { ContainerProgressBar, Bar } from "./progressbar.style";
-import { RowResponsive } from "../../../templates/Layouts.style";
+import { RowResponsive } from "../../templates/Layouts.style";
 import { SmallText } from "../text/Text";
 
 interface IProgressBarProps {
