@@ -8,7 +8,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import About from "./components/sections/about/About";
 import Projects from "./components/sections/projects/Projects";
 import Contact from "./components/sections/contact/Contact";
-import Footer from "./organisms/footer/Footer";
+import Footer from "./components/organisms/footer/Footer";
 
 AOS.init({
   duration: 1500,

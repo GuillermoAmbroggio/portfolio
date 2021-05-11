@@ -6,9 +6,9 @@ import {
   RowResponsive,
   ColumnLeft,
   ColumnRight,
-} from "../../../templates/Layouts.style";
-import ItemContact from "../../../organisms/contact/item/ItemContact";
-import FormContact from "../../../organisms/contact/form/FormContact";
+} from "../../templates/Layouts.style";
+import ItemContact from "../../organisms/contact/item/ItemContact";
+import FormContact from "../../organisms/contact/form/FormContact";
 
 const Contact: React.FC = () => {
   const texts = Writing();

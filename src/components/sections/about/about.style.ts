@@ -17,7 +17,7 @@ export const ContainerAbout = styled.div`
   @media (min-width: 1024px) {
     padding: 60px 150px;
   }
-  @media (max-width: 376px) {
+  @media (max-width: 480px) {
     padding: 60px 20px;
   }
 `;
@@ -34,6 +34,7 @@ export const ImgProfile = styled.img`
   padding: 20px;
   @media (max-width: 768px) {
     width: 100%;
+    height: 100%;
   }
 `;
 

@@ -16,5 +16,3 @@ typings/
 # dotenv environment variables file
 .env
 
-# Compiled 
-build/
