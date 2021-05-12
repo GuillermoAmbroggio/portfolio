@@ -7,7 +7,7 @@ export const writingES = {
   },
   hero: {
     name: "Guillermo Ambroggio",
-    my: "Yo soy",
+    my: "Soy",
     title1: "Ingeniero",
     title2: "Desarrollador",
   },
@@ -40,7 +40,7 @@ export const writingES = {
         title: "Full Stack Developer",
         period: "2020-2020",
         institution: "Henry",
-        description: "Bootcamp inmerisvo de JavaScript, +600 horas en 4 meses.",
+        description: "Bootcamp intensivo de JavaScript, +600 horas en 4 meses.",
       },
       2: {
         title: "Ingeniero Civil",
@@ -161,7 +161,7 @@ export const writingES = {
     },
   },
   footer: {
-    made: "Echo con",
+    made: "Hecho con",
     by: "por",
     text: "Gracias por tu visita, espero que te haya gustado, saludos!",
   },
