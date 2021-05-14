@@ -4,7 +4,6 @@ export const Text = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.desktop.regular};
   color: ${({ theme }) => theme.palette.texts.regular};
   font-weight: ${({ theme }) => theme.fontWeights.regular};
-
   @media (max-width: 480px) {
     justify-content: left;
     font-size: ${({ theme }) => theme.fontSizes.mobile.regular};

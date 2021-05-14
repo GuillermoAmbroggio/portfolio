@@ -53,3 +53,19 @@ export const Column = styled.div`
     }
   }
 `;
+
+export const ColumnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  @media (max-width: 768px) {
+    margin: 20px 0px 0px 0px;
+  }
+`;
+
+export const TextCenter = styled.div`
+  @media (min-width: 480px) {
+    text-align: center;
+  }
+`;

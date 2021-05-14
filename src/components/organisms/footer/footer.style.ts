@@ -22,7 +22,7 @@ export const TextName = styled.p`
   }
 `;
 
-export const ContainerTexts = styled.p`
+export const ContainerTexts = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -34,7 +34,7 @@ export const ContainerTexts = styled.p`
   }
 `;
 
-export const FirstTexts = styled.p`
+export const FirstTexts = styled.div`
   display: flex;
   @media (max-width: 480px) {
     display: flex;

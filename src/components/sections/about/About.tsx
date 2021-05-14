@@ -6,6 +6,8 @@ import {
   ImgProfile,
   Column,
   AnchorAbout,
+  ColumnContainer,
+  TextCenter,
 } from "./about.style";
 import Writing from "../../../copywriting/Writing";
 import profileImg from "../../../assets/about/profile.png";
@@ -21,10 +23,14 @@ const About: React.FC = () => {
       <AnchorAbout id="about" />
       <ContainerAbout data-aos="fade-up">
         <Title>{texts.about.title}</Title>
-        <Text style={{ margin: "40px 0px" }}>{texts.about.intro}</Text>
+        <TextCenter>
+          <Text style={{ margin: "40px 0px 20px 0px" }}>
+            {texts.about.intro}
+          </Text>
+        </TextCenter>
         <Row>
           <ImgProfile src={profileImg} />
-          <Column style={{ margin: 20 }}>
+          <ColumnContainer>
             <SubTitle>{texts.about.subtitle}</SubTitle>
             <Row style={{ marginTop: 20 }}>
               <Column>
@@ -67,7 +73,7 @@ const About: React.FC = () => {
               </Column>
             </Row>
             <Text>{texts.about.personalInfo}</Text>
-          </Column>
+          </ColumnContainer>
         </Row>
       </ContainerAbout>
       <Skills />
