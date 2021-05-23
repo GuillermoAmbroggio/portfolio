@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import flagArg from "../../assets/navbar/flagarg.png";
-import flagUsa from "../../assets/navbar/flagusa.png";
+import flagArg from "../../../assets/navbar/flagarg.png";
+import flagUsa from "../../../assets/navbar/flagusa.png";
 
 interface Props {
   active: boolean;
@@ -243,4 +243,32 @@ export const Usa = styled.img<ILanguageProps>`
     language === "es" ? "scale(0.5)" : "scale(1)"};
   -webkit-transition: 1s;
   transition: 1s;
+`;
+
+export const ArrowUp = styled.div`
+  background-color: ${({ theme }) => theme.palette.primary};
+  color: white;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  @media (max-width: 480px) {
+    opacity: 0.6;
+    bottom: 16px;
+    right: 16px;
+    &:hover {
+      opacity: 1;
+    }
+  }
 `;

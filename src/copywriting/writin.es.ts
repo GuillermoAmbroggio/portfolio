@@ -11,6 +11,7 @@ export const writingES = {
     title1: "Ingeniero",
     title2: "Desarrollador",
   },
+  download: "Descargar",
   about: {
     title: "SOBRE MI",
     intro:

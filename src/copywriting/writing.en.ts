@@ -11,6 +11,7 @@ export const writingEn = {
     title1: "Engineer",
     title2: "Developer",
   },
+  download: "Download",
   about: {
     title: "ABOUT",
     intro:

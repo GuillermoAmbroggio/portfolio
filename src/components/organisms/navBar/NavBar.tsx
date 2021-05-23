@@ -12,12 +12,13 @@ import {
   LeftMenu,
   LeftList,
   LeftListItem,
+  ArrowUp,
 } from "./navbar.style";
 import "./navbar.css";
-import Writing from "../../copywriting/Writing";
-import Icon from "../atoms/icon/Icon";
-import useStore from "../../hooks/useStore";
-import useDispatch from "../../hooks/useDispatch";
+import Icon from "../../atoms/icon/Icon";
+import useStore from "../../../hooks/useStore";
+import useDispatch from "../../../hooks/useDispatch";
+import Writing from "../../../copywriting/Writing";
 
 const NavBar: React.FC = ({}) => {
   const texts = Writing();
@@ -154,6 +155,13 @@ const NavBar: React.FC = ({}) => {
           </Link>
         </List>
       </ContainerNavBar>
+      {active !== "home" ? (
+        <Link href="#home" onClick={() => setActive("home")}>
+          <ArrowUp>
+            <Icon name="fas fa-arrow-up" />
+          </ArrowUp>
+        </Link>
+      ) : null}
     </div>
   );
 };
