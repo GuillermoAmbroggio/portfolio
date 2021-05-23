@@ -103,6 +103,9 @@ export const writingES = {
           title: "Vitau App - PlayStore",
           url:
             "https://play.google.com/store/apps/details?id=mx.vitau.androidvitau",
+          title2: "Vitau App - AppStore",
+          url2:
+            "https://apps.apple.com/mx/app/vitau-farmacia-digital/id1560696284",
         },
         description: {
           title: "Descripción",
