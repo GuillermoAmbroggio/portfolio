@@ -11,6 +11,7 @@ export interface IWriting {
     title1: string;
     title2: string;
   };
+  download: string;
   about: {
     title: string;
     intro: string;
