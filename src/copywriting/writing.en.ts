@@ -50,7 +50,7 @@ export const writingEn = {
       },
     },
     professionalExperiencie: {
-      title: 'Professional Experiencie*-s: ',
+      title: 'Professional Experiencie: ',
       1: {
         title: 'Vitau (YC Company)',
         period: 'SEP 2020 - PRESENT',
