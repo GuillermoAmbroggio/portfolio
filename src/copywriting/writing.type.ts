@@ -60,7 +60,6 @@ export interface IWriting {
         period: string;
         institution: string;
         description1: string;
-        deescription2: string;
       };
     };
   };
