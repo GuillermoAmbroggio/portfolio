@@ -1,14 +1,12 @@
 import path from 'path';
 import webpack from 'webpack';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
-import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
-import TerserPlugin from 'terser-webpack-plugin';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require('dotenv').config();
 
 const config: webpack.Configuration = {
   entry: './src/index.tsx',
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -66,10 +64,6 @@ const config: webpack.Configuration = {
       'CONTACT_USER_ID',
     ]),
   ],
-  optimization: {
-    minimize: true,
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
-  },
 };
 
 export default config;
