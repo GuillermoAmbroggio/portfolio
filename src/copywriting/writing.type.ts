@@ -79,8 +79,12 @@ export interface IWriting {
       url: {
         title: string;
         title2?: string;
+        title3?: string;
+        title4?: string;
         url: string;
         url2?: string;
+        url3?: string;
+        url4?: string;
       };
 
       description: { title: string; content: string };
