@@ -1,13 +1,13 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import ProjectCardModal from "../../molecules/projectCardModal/ProjectCardModal";
+import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import ProjectCardModal from '../../molecules/projectCardModal/ProjectCardModal';
 import {
   ContainerCarrusel,
   Column,
   RowResponsive,
-} from "./projectdetail.style";
-import useImages from "./useImages";
+} from './projectdetail.style';
+import useImages from './useImages';
 
 export interface IProjectsDetails {
   title: string;
@@ -17,8 +17,12 @@ export interface IProjectsDetails {
   url: {
     title: string;
     title2?: string;
+    title3?: string;
+    title4?: string;
     url: string;
     url2?: string;
+    url3?: string;
+    url4?: string;
   };
   id: number;
   description: { title: string; content: string };
@@ -31,15 +35,15 @@ interface IProjectDetailProps {
 const ProjectDetail: React.FC<IProjectDetailProps> = ({ data }) => {
   const images = useImages(data.id);
   return (
-    <RowResponsive style={{ height: "100%" }}>
+    <RowResponsive style={{ height: '100%' }}>
       <ContainerCarrusel>
         <Carousel autoPlay={false} infiniteLoop={true}>
           {images.length
             ? images.map((ele, i) => (
-                <div style={{ maxHeight: "50vh" }} key={i}>
+                <div style={{ maxHeight: '50vh' }} key={i}>
                   <img
                     src={ele}
-                    style={{ objectFit: "contain", maxHeight: "50vh" }}
+                    style={{ objectFit: 'contain', maxHeight: '50vh' }}
                   />
                 </div>
               ))

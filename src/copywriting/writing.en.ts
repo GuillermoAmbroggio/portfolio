@@ -127,6 +127,48 @@ export const writingEn = {
             'This project consumes the best gifs from the Gipsy api and displays them, in which you can edit the amount of gif and search for gif by themes.',
         },
       },
+      {
+        id: 4,
+        title: 'Flybondi - Test',
+        category: 'Web',
+        client: 'Propio-Test',
+        date: 'September, 2022',
+        url: {
+          title: 'Flybondy - Web',
+          title2: 'Flybondy - GitHub',
+          title3: 'Flybondy - API',
+          title4: 'Flybondy API - Github',
+          url2: 'https://github.com/GuillermoAmbroggio/flybondi',
+          url: 'https://flybondi.vercel.app/',
+          url3: 'https://flybondi-api.herokuapp.com/',
+          url4: 'https://github.com/GuillermoAmbroggio/flybondi-api',
+        },
+        description: {
+          title: 'Description',
+          content:
+            'This project consists of an API developed with Node-TS-Express-Postgres and a Client developed with React-Vite-TS. In which you can search for tickets and generate an order, it also has user registration and login.',
+        },
+      },
+      {
+        id: 5,
+        title: 'Weather App',
+        category: 'App - Web',
+        client: 'Test',
+        date: 'May, 2022',
+        url: {
+          title: 'Weather App - Web',
+          title2: 'Weather App - GitHub',
+          title3: 'Weather App - ExpoApp',
+          url: 'https://weatherapp-beta.vercel.app',
+          url2: 'https://github.com/GuillermoAmbroggio/climaapp',
+          url3: 'https://expo.dev/@guillermoambroggio/weatherapp?serviceType=classic&distribution=expo-go',
+        },
+        description: {
+          title: 'Description',
+          content:
+            'This project consists of a Front Client developed with React native and can be used both in app and web. It is not uploaded to the stores, therefore to run it in the app it is necessary to scan the QR code using the "Expo go" app.',
+        },
+      },
     ],
   },
   contact: {
