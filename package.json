@@ -1,6 +1,7 @@
 {
   "name": "protafolio",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "start": "webpack serve --open --config webpack.config.dev.mjs",
     "build": "webpack --mode production --config webpack.config.js"
