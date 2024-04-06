@@ -12,6 +12,7 @@ export interface IWriting {
     title2: string;
   };
   download: string;
+  fixtuwin: string;
   about: {
     title: string;
     intro: string;
@@ -56,6 +57,12 @@ export interface IWriting {
         description: string;
       };
       2: {
+        title: string;
+        period: string;
+        institution: string;
+        description: string;
+      };
+      3: {
         title: string;
         period: string;
         institution: string;

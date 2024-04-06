@@ -1,9 +1,9 @@
-import { DefaultTheme } from "styled-components";
-import { colors, text } from "./tokens";
-import produce from "immer";
+import { DefaultTheme } from 'styled-components';
+import { colors, text } from './tokens';
+import { produce } from 'immer';
 
 export const lightTheme: DefaultTheme = {
-  borderRadius: "4px",
+  borderRadius: '4px',
   palette: {
     common: {
       black: colors.common.black,
@@ -26,7 +26,7 @@ export const lightTheme: DefaultTheme = {
   fontWeights: text.weight,
 };
 
-export const darkTheme = produce(lightTheme, (draft) => {
+export const darkTheme = produce(lightTheme, (draft: any) => {
   draft.palette.background = colors.common.black;
   draft.palette.texts.regular = colors.common.white;
   draft.palette.texts.title = colors.common.white;

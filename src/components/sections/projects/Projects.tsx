@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   AnchorProjects,
   ContainerProjects,
   ContainerCards,
-} from "./projects.style";
-import { Title } from "../../atoms/text/Text";
-import Writing from "../../../copywriting/Writing";
+} from './projects.style';
+import { Title } from '../../atoms/text/Text';
+import Writing from '../../../copywriting/Writing';
 import ProjectDetail, {
   IProjectsDetails,
-} from "../../organisms/projectDetail/ProjectDetail";
-import Modal from "../../organisms/modal/Modal";
-import ProjectCard from "../../molecules/projectCard/ProjectCard";
+} from '../../organisms/projectDetail/ProjectDetail';
+import Modal from '../../organisms/modal/Modal';
+import ProjectCard from '../../molecules/projectCard/ProjectCard';
 
 const Projects: React.FC = () => {
   const texts = Writing();
@@ -22,14 +22,14 @@ const Projects: React.FC = () => {
   const body = document.body;
 
   const closeModal = () => {
-    body.classList.remove("stop-scrolling");
+    body.classList.remove('stop-scrolling');
     setShowModal(false);
   };
 
   return (
     <>
-      <AnchorProjects id="projects" />
-      <ContainerProjects data-aos="fade-up">
+      <AnchorProjects id='projects' />
+      <ContainerProjects data-aos='fade-up'>
         <Title style={{ marginBottom: 20 }}>{texts.projects.title}</Title>
         <ContainerCards>
           {texts.projects.Myprojects.map((e, i) => {
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
                 key={i}
                 openModal={() => {
                   setDatesModal(e);
-                  body.classList.add("stop-scrolling");
+                  body.classList.add('stop-scrolling');
                   setShowModal(true);
                 }}
                 title={e.title}
@@ -48,10 +48,10 @@ const Projects: React.FC = () => {
             );
           })}
         </ContainerCards>
-        <Modal open={showModal} close={closeModal}>
-          <ProjectDetail data={datesModal} />
-        </Modal>
       </ContainerProjects>
+      <Modal open={showModal} close={closeModal}>
+        <ProjectDetail data={datesModal} />
+      </Modal>
     </>
   );
 };

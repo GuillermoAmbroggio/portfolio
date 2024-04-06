@@ -3,10 +3,12 @@ import webpack from 'webpack';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-require('dotenv').config();
+import { fileURLToPath } from 'url';
 
-const config: webpack.Configuration = {
+const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
+const __dirname = path.dirname(__filename); // get the name of the directory
+
+const config = {
   entry: './src/index.tsx',
   mode: 'production',
   module: {
@@ -49,16 +51,15 @@ const config: webpack.Configuration = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'build'),
+    static: {
+      directory: path.join(__dirname, 'build'),
+    },
     compress: true,
     port: 4000,
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin({
       async: false,
-      eslint: {
-        files: './src/**/*.{ts,tsx,js,jsx}',
-      },
     }),
     new webpack.EnvironmentPlugin([
       'CONTACT_SERVICE_ID',

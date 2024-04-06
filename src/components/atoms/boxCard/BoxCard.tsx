@@ -1,8 +1,11 @@
-import React from "react";
-import { ContainerCard } from "./boxcard.style";
-import useStore from "../../../hooks/useStore";
+import React, { ReactNode } from 'react';
+import { ContainerCard } from './boxcard.style';
+import useStore from '../../../hooks/useStore';
 
-const BoxCard: React.FC = ({ children }) => {
+interface BoxCardProps {
+  children: ReactNode;
+}
+const BoxCard: React.FC<BoxCardProps> = ({ children }) => {
   const { modeTheme } = useStore();
   return <ContainerCard modeTheme={modeTheme}>{children}</ContainerCard>;
 };

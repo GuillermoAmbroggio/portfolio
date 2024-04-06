@@ -21,7 +21,7 @@ const Resume: React.FC = () => {
   const theme = useTheme();
 
   return (
-    <ContainerResume data-aos="fade-up">
+    <ContainerResume data-aos='fade-up'>
       <Title>{texts.resume.title}</Title>
       <RowResponsive style={{ marginTop: '40px' }}>
         <ColumnLeft>
@@ -54,10 +54,14 @@ const Resume: React.FC = () => {
             </Text>
           </ColumnResume>
         </ColumnLeft>
+
+        {/* TRABAJAOS */}
         <ColumnRight>
           <SubTitle style={{ marginBottom: '15px' }}>
             {texts.resume.professionalExperiencie.title}
           </SubTitle>
+
+          {/* BLUE ALBA */}
           <ColumnResume>
             <BoldText style={{ color: theme.palette.primary }}>
               {texts.resume.professionalExperiencie[1].title}
@@ -74,6 +78,8 @@ const Resume: React.FC = () => {
               • {texts.resume.professionalExperiencie[1].description}
             </Text>
           </ColumnResume>
+
+          {/* VITAU */}
           <ColumnResume>
             <BoldText style={{ color: theme.palette.primary }}>
               {texts.resume.professionalExperiencie[2].title}
@@ -86,8 +92,23 @@ const Resume: React.FC = () => {
             <Text style={{ fontStyle: 'oblique', marginBottom: '15px' }}>
               {texts.resume.professionalExperiencie[2].institution}
             </Text>
+          </ColumnResume>
+
+          {/* VIALIDAD */}
+          <ColumnResume>
+            <BoldText style={{ color: theme.palette.primary }}>
+              {texts.resume.professionalExperiencie[3].title}
+            </BoldText>
+            <Date>
+              <SmallText>
+                {texts.resume.professionalExperiencie[3].period}
+              </SmallText>
+            </Date>
+            <Text style={{ fontStyle: 'oblique', marginBottom: '15px' }}>
+              {texts.resume.professionalExperiencie[3].institution}
+            </Text>
             <Text>
-              • {texts.resume.professionalExperiencie[2].description1}
+              • {texts.resume.professionalExperiencie[3].description1}
             </Text>
           </ColumnResume>
         </ColumnRight>
