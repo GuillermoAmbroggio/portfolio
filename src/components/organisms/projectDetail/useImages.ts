@@ -23,28 +23,37 @@ import Flybondi5 from '../../../assets/projects/flybondi/flybondi-responsive.png
 import Weatherapp1 from '../../../assets/projects/weatherapp/weatherapp-light.png';
 import Weatherapp2 from '../../../assets/projects/weatherapp/weatherapp-dark.png';
 
+import Fixtuwin1 from '../../../assets/projects/fixtuwin/fixtu-home.png';
+import Fixtuwin2 from '../../../assets/projects/fixtuwin/fixtu-payment.png';
+import Fixtuwin3 from '../../../assets/projects/fixtuwin/fixtureDetail.png';
+import Fixtuwin4 from '../../../assets/projects/fixtuwin/tableUser.png';
+
 const TenShopImages = [TenShop1, TenShop2, TenShop3, TenShop4];
 const VitauImages = [Vitau1, Vitau2, Vitau3, Vitau4, Vitau5, Vitau6];
 const GifImages = [Gif1, Gif2, Gif3];
 const FlybondiImages = [Flybondi1, Flybondi2, Flybondi3, Flybondi4, Flybondi5];
 const Weatherapp = [Weatherapp1, Weatherapp2];
+const FixtuwinImages = [Fixtuwin1, Fixtuwin2, Fixtuwin3, Fixtuwin4];
 
 const useImages = (id: number): string[] => {
   let images: string[] = [];
+  if (id === 0) {
+    return (images = FixtuwinImages);
+  }
   if (id === 1) {
-    images = TenShopImages;
+    return (images = TenShopImages);
   }
   if (id === 2) {
-    images = VitauImages;
+    return (images = VitauImages);
   }
   if (id === 3) {
-    images = GifImages;
+    return (images = GifImages);
   }
   if (id === 4) {
-    images = FlybondiImages;
+    return (images = FlybondiImages);
   }
   if (id === 5) {
-    images = Weatherapp;
+    return (images = Weatherapp);
   }
   return images;
 };

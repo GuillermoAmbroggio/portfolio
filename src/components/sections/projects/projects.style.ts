@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AnchorProjects = styled.div`
   display: block;
@@ -26,5 +26,6 @@ export const ContainerCards = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
 `;

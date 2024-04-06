@@ -12,6 +12,7 @@ export const writingES = {
     title2: 'Desarrollador',
   },
   download: 'Descargar',
+  fixtuwin: 'Ultimo Proyecto',
   about: {
     title: 'SOBRE MI',
     intro:
@@ -52,13 +53,19 @@ export const writingES = {
     professionalExperiencie: {
       title: 'Experiencia Laboral: ',
       1: {
+        title: 'Blue Alba LLC',
+        period: 'AGO 2022 - PRESENTE',
+        institution: 'Desarrollos Tecnologicos - Argentina',
+        description: 'Desarrollo de aplicaciones para la industria financiera.',
+      },
+      2: {
         title: 'Vitau (YC Company)',
-        period: 'SEP 2020 - PRESENTE',
+        period: 'SEP 2020 - NOV 2022',
         institution: 'Farmacia digital - Monterrey, Mexico.',
         description:
           'Desarrollo de aplicaciones front-end para comercio electrónico.',
       },
-      2: {
+      3: {
         title: 'Direccion Nacional de Vialidad',
         period: 'JUN 2019 - NOV 2020',
         institution: 'Empresa estatal - Argentina.',
@@ -77,6 +84,21 @@ export const writingES = {
       date: 'Fecha del Proyecto: ',
     },
     Myprojects: [
+      {
+        id: 0,
+        title: 'FIXTUWIN',
+        category: 'Web',
+        client: 'Propio',
+        date: 'Feb, 2024',
+        url: {
+          title: 'Fixtuwin',
+          url: 'https://www.fixtuwin.com.ar/',
+        },
+        description: {
+          title: 'Descripción',
+          content: `Pagina para apuestas deportivas. \n Desarrolle el backend con Node js, typescript, postgres, redis. Integracion con Binance y Mercado Pago para los pagos. Integracion con api de eventos deportivos. Tiene un Panel de administracion desarrollado con React Ts. Y el Front tambien con React Ts, zustand, react query.`,
+        },
+      },
       {
         id: 1,
         title: 'Ten Shop - Comercio electronico',
