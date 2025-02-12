@@ -18,15 +18,15 @@ const Skills: React.FC = ({}) => {
           }}
         >
           <ProgressBar title='CSS' status='95%' />
-          <ProgressBar title='JAVASCRIPT' status='90%' />
-          <ProgressBar title='TYPESCRIPT' status='90%' />
-          <ProgressBar title='NODE TS' status='85%' />
+          <ProgressBar title='JAVASCRIPT' status='95%' />
+          <ProgressBar title='TYPESCRIPT' status='92%' />
+          <ProgressBar title='NODE TS' status='89%' />
         </ColumnLeft>
         <ColumnRight style={{ justifyContent: 'space-between' }}>
-          <ProgressBar title='HTML' status='95%' />
-          <ProgressBar title='REACT' status='95%' />
-          <ProgressBar title='REACT NATIVE' status='90%' />
-          <ProgressBar title='EXPRESS JS' status='85%' />
+          <ProgressBar title='HTML' status='97%' />
+          <ProgressBar title='REACT' status='94%' />
+          <ProgressBar title='REACT NATIVE' status='86%' />
+          <ProgressBar title='EXPRESS JS' status='88%' />
         </ColumnRight>
       </RowSkills>
     </ContainerSkills>

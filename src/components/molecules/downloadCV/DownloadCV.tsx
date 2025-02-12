@@ -1,6 +1,5 @@
 import React from 'react';
 import CV from './pdf/CVGuillermoAmbroggio.pdf';
-import CVI from './pdf/CVGuillermoAmbroggioI.pdf';
 
 import Icon from '../../atoms/icon/Icon';
 import { Link, ContainerDownload, TextCV } from './downloadcv.style';
@@ -13,7 +12,7 @@ const DownloadCV: React.FC = () => {
 
   return (
     <Link
-      href={language === 'en' ? CVI : CV}
+      href={language === 'en' ? CV : CV}
       download='CVGuillermoAmbroggio.pdf'
     >
       <ContainerDownload>
